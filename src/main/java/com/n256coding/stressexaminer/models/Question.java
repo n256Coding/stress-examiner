@@ -8,8 +8,8 @@ import lombok.Setter;
 @AllArgsConstructor @NoArgsConstructor
 public class Question {
     @Getter @Setter
-    private String questionId;
+    private String question_id;
 
     @Getter @Setter
-    private String yesOrNo;
+    private String answer;
 }

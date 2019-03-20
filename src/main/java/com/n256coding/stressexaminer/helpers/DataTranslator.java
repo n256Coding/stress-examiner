@@ -9,8 +9,8 @@ public class DataTranslator {
     public static String[] getArray(List<Question> questions) {
         List<String> strings = new ArrayList<>();
         for (Question question : questions) {
-            strings.add(question.getQuestionId());
-            strings.add(String.valueOf(question.getYesOrNo()));
+            strings.add(question.getQuestion_id());
+            strings.add(String.valueOf(question.getAnswer()));
         }
 
         return strings.toArray(new String[strings.size()]);
