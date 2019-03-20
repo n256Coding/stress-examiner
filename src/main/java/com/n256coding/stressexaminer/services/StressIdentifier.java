@@ -16,7 +16,8 @@ public class StressIdentifier {
     private final Set<Instance> instances = Sets.newHashSet();
 
     public StressIdentifier() {
-        instances.add(HashMapAttributes.create("1", "yes",
+        instances.add(HashMapAttributes.create(
+                "1", "yes",
                 "2", "no",
                 "3", "no",
                 "4", "no",
@@ -26,7 +27,8 @@ public class StressIdentifier {
                 "8", "no",
                 "9", "no",
                 "10", "no").classification("sad"));
-        instances.add(HashMapAttributes.create("1", "yes",
+        instances.add(HashMapAttributes.create(
+                "1", "yes",
                 "2", "yes",
                 "3", "no",
                 "4", "no",
@@ -36,7 +38,8 @@ public class StressIdentifier {
                 "8", "no",
                 "9", "no",
                 "10", "no").classification("no sad"));
-        instances.add(HashMapAttributes.create("1", "yes",
+        instances.add(HashMapAttributes.create(
+                "1", "yes",
                 "2", "yes",
                 "3", "yes",
                 "4", "yes",
@@ -46,7 +49,8 @@ public class StressIdentifier {
                 "8", "no",
                 "9", "no",
                 "10", "no").classification("happy"));
-        instances.add(HashMapAttributes.create("1", "yes",
+        instances.add(HashMapAttributes.create(
+                "1", "yes",
                 "2", "no",
                 "3", "no",
                 "4", "no",
