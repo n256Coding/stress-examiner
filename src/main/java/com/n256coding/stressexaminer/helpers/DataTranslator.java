@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataTranslator {
-    public static String[] getArray(List<Question> questions) {
-        List<String> strings = new ArrayList<>();
+    public static String getPSVString(List<Question> questions) {
+        List<String> sortedAnswers = new ArrayList<>(questions.size());
+
         for (Question question : questions) {
-            strings.add(question.getQuestion_id());
-            strings.add(String.valueOf(question.getAnswer()));
+            sortedAnswers.add(Integer.parseInt(question.getQuestion_id()) - 1, question.getAnswer());
         }
 
-        return strings.toArray(new String[strings.size()]);
+        return String.join("|", sortedAnswers);
     }
 }
